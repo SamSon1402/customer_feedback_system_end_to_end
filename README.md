@@ -81,3 +81,35 @@ analyzer.run_analysis(
     end_date='2024-02-01',
     output_dir='output'
 )
+
+jupyter notebook notebooks/analysis_example.ipynb
+
+customer_feedback_analytics/
+│
+├── config/
+│   ├── __init__.py
+│   └── settings.py
+│
+├── src/
+│   ├── __init__.py
+│   ├── data_loader.py
+│   ├── preprocessor.py
+│   ├── sentiment_analyzer.py
+│   ├── clustering.py
+│   ├── visualization.py
+│   └── utils.py
+│
+├── models/
+│   └── __init__.py
+│
+├── tests/
+│   ├── __init__.py
+│   └── test_analyzer.py
+│
+├── notebooks/
+│   └── analysis_example.ipynb
+│
+├── requirements.txt
+└── main.py
+
+
