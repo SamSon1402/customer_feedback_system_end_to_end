@@ -44,27 +44,27 @@ A comprehensive platform for analyzing customer feedback and reviews using advan
 ## 🛠️ Installation
 
 1. Clone the repository
-    ```bash
-    git clone https://github.com/yourusername/customer-feedback-analytics.git
-    cd customer-feedback-analytics
-    ```
+```bash
+git clone https://github.com/yourusername/customer-feedback-analytics.git
+cd customer-feedback-analytics
+```
 
 2. Create virtual environment
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows: venv\Scripts\activate
-    ```
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 
 3. Install dependencies
-    ```bash
-    pip install -r requirements.txt
-    ```
+```bash
+pip install -r requirements.txt
+```
 
 4. Configure database settings
-    ```bash
-    cp config/settings.example.py config/settings.py
-    # Edit config/settings.py with your database credentials
-    ```
+```bash
+cp config/settings.example.py config/settings.py
+# Edit config/settings.py with your database credentials
+```
 
 ## 📊 Usage
 
@@ -81,9 +81,15 @@ analyzer.run_analysis(
     end_date='2024-02-01',
     output_dir='output'
 )
+```
 
+### Using the Jupyter Notebook
+```bash
 jupyter notebook notebooks/analysis_example.ipynb
+```
 
+## 📁 Project Structure
+```
 customer_feedback_analytics/
 │
 ├── config/
@@ -111,5 +117,60 @@ customer_feedback_analytics/
 │
 ├── requirements.txt
 └── main.py
+```
 
+## 📈 Example Visualizations
 
+![Sentiment Trend](https://your-image-host.com/sentiment_trend.png)
+![Customer Segments](https://your-image-host.com/customer_segments.png)
+
+## 📝 Database Schema
+
+### Reviews Table
+```sql
+CREATE TABLE reviews (
+    review_id SERIAL PRIMARY KEY,
+    customer_id INTEGER,
+    product_id INTEGER,
+    review_text TEXT,
+    rating INTEGER,
+    created_at TIMESTAMP,
+    updated_at TIMESTAMP
+);
+```
+
+### Processed Reviews Table
+```sql
+CREATE TABLE processed_reviews (
+    review_id INTEGER PRIMARY KEY,
+    processed_text TEXT,
+    sentiment_score FLOAT,
+    sentiment_label VARCHAR(10),
+    cluster_id INTEGER
+);
+```
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- BERT model from Hugging Face Transformers
+- Scikit-learn for machine learning implementations
+- Plotly for interactive visualizations
+- NLTK for text processing
+
+## 📧 Contact
+
+Your Name - [@yourtwitter](https://twitter.com/yourtwitter) - email@example.com
+
+Project Link: [https://github.com/yourusername/customer-feedback-analytics](https://github.com/yourusername/customer-feedback-analytics)
