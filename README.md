@@ -6,10 +6,11 @@
 
 A comprehensive platform for analyzing customer feedback and reviews using advanced NLP and machine learning techniques. The platform provides sentiment analysis, customer segmentation, and interactive visualizations to derive actionable insights from customer feedback data.
 
+![voc-users-dashboard](https://github.com/user-attachments/assets/472e057c-df59-4dde-b729-4b2f67aa8c8b)
 ![customer-segments-view](https://github.com/user-attachments/assets/bc6970e2-20c2-45c8-848d-73cc3fbb9e04)
 ![realtime-monitoring](https://github.com/user-attachments/assets/523502e4-1c92-4bf3-be1f-f92fe15b0c8e)
 ![sentiment-analysis-view](https://github.com/user-attachments/assets/1865adb5-84da-4dab-a074-a3928eca9c88)
-![voc-users-dashboard](https://github.com/user-attachments/assets/472e057c-df59-4dde-b729-4b2f67aa8c8b)
+
 
 ## 🚀 Features
 
